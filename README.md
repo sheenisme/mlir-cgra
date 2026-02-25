@@ -120,7 +120,8 @@ pip3.9 install torch-1.14.0.dev20221014+cpu-cp39-cp39-linux_x86_64.whl
 pip3.9 install torch_mlir-20221015.627-cp39-cp39-linux_x86_64.whl
 
 # install transformers
-pip3.9 install transformers
+pip3.9 install transformers==4.25.1
+pip3.9 install numpy==1.24.3
 ```
 
 

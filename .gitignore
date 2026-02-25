@@ -1,3 +1,13 @@
+setup_env.sh
+env.sh
+experiments/*/*/*.o
+experiments/*/*/*.ll
+experiments/*/*/simulate
+experiments/*/*/simulate*
+experiments/*/*/*.mlir
+experiments/*/*/CustomizedRuntime-*.cpp
+experiments/nohup.out
+
 *.log
 cmake-build-debug/
 cmake-build-release/

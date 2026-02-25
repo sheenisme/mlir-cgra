@@ -39,12 +39,12 @@ define void @generic_0(ptr %0, ptr %1, i64 %2, i64 %3, i64 %4, i64 %5, i64 %6, p
 
 57:                                               ; preds = %97, %28
   %58 = phi i64 [ %98, %97 ], [ 0, %28 ]
-  %59 = icmp slt i64 %58, 4, !dbg !37
+  %59 = icmp slt i64 %58, 16, !dbg !37
   br i1 %59, label %60, label %99, !dbg !38
 
 60:                                               ; preds = %63, %57
   %61 = phi i64 [ %96, %63 ], [ 0, %57 ]
-  %62 = icmp slt i64 %61, 4, !dbg !39
+  %62 = icmp slt i64 %61, 16, !dbg !39
   br i1 %62, label %63, label %97, !dbg !40
 
 63:                                               ; preds = %60
@@ -99,7 +99,7 @@ define void @generic_0(ptr %0, ptr %1, i64 %2, i64 %3, i64 %4, i64 %5, i64 %6, p
 !1 = !DIFile(filename: "LLVMDialectModule", directory: "/")
 !2 = !{i32 2, !"Debug Info Version", i32 3}
 !3 = distinct !DISubprogram(name: "generic_0", linkageName: "generic_0", scope: null, file: !4, line: 2, type: !5, scopeLine: 2, spFlags: DISPFlagDefinition | DISPFlagOptimized, unit: !0, retainedNodes: !6)
-!4 = !DIFile(filename: "10-accel-llvm.mlir", directory: "/home/tancheng/workspace/ml/mlir-cgra/mlir-cgra/experiments/demo/baseline")
+!4 = !DIFile(filename: "10-accel-llvm.mlir", directory: "/home/sheen/workspace/mlir-cgra/experiments/demo/baseline")
 !5 = !DISubroutineType(types: !6)
 !6 = !{}
 !7 = !DILocation(line: 4, column: 10, scope: !8)
