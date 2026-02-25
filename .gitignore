@@ -1,3 +1,10 @@
+experiments/*/*/*.o
+experiments/*/*/*.ll
+experiments/*/*/simulate
+experiments/*/*/simulate*
+experiments/*/*/*.mlir
+experiments/*/*/CustomizedRuntime-*.cpp
+
 *.log
 cmake-build-debug/
 cmake-build-release/

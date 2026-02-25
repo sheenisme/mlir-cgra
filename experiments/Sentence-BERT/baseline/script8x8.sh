@@ -35,7 +35,7 @@ llc -filetype=obj 12-accel-8.ll
 python ../../../tools/generateCustomizedRuntime.py 08-accel-8.mlir > CustomizedRuntime-8.cpp
 
 # compile for simulation
-clang++-12 main.cpp 11-model-8.o 12-accel-8.o ../../../../llvm-project/build/lib/libmlir_c_runner_utils.so CustomizedRuntime-8.cpp -I../../../sim/ ../../../sim/*.cpp -o simulate_8
+clang++-12 main.cpp 11-model-8.o 12-accel-8.o $LLVM_BUILD_DIR/lib/libmlir_c_runner_utils.so CustomizedRuntime-8.cpp -I../../../sim/ ../../../sim/*.cpp -o simulate_8
 
 ./simulate_8 8 false true
 
